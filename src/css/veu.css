@@ -1,0 +1,100 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#top_margin{
+    height: 103%;
+width: 80%;
+background-color: #F0F0F0;
+margin-top: -8px;
+margin-left: 148px;
+}
+#middle{
+height: 8%;
+width: 100%;
+background-color: white;
+margin-top: 0px;
+margin-left: 0px;
+}
+#menu_button{
+height: 10%;
+width: 100%;
+background-color: #F0F0F0;
+margin-top: 16px;
+margin-left: -1px;
+}
+#skills_main{
+margin-left: 82%;
+margin-top: 6px;
+border: none;
+background: white;
+height: 27px;
+width: 75px;
+cursor: pointer;
+position: inherit;
+color: darkslategrey;
+font-weight: bold;
+font-size: 16px;
+}
+#project{
+border: none;
+background: white;
+height: 27px;
+width: 75px;
+cursor: pointer; 
+color: darkslategrey;
+font-weight: bold;
+font-size: 16px;
+}
+#education{
+border: none;
+background: white;
+height: 27px;
+width: 75px;
+cursor: pointer;
+margin-left: 74%;
+margin-top: -27px;
+color: darkslategrey;
+font-weight: bold;
+font-size: 16px;
+}
+#img{
+margin-left: 65%;
+margin-top: 143px;
+height: 46%;
+width: 271px;
+}
+#user_name{
+margin-left: 58px;
+margin-top: -307px;
+font-size: 36px;
+color: inherit;
+}
+#name{
+margin-top: -23px;
+margin-left: 59px;
+font-size: 31px;
+}
+#obective{
+font-size: 17px;
+font-style: italic;
+}
+#Info{
+height: 36px;
+width: 94px;
+background-color: green;
+border: none;
+color: white;
+font-size: 15px;
+cursor: pointer;
+}
+#close{
+height: 36px;
+width: 94px;
+background-color: red;
+border: none;
+color: white;
+font-size: 15px;
+cursor: pointer;
+}

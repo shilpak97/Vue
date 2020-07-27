@@ -1,0 +1,135 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="tabs_style.css">
+<style>
+    body
+{
+ background-color:white;
+
+} 
+h1
+{
+ text-align:center;
+ font-size:35px;
+ margin-top:60px;
+ color:#BEF781;
+}
+h1 p
+{
+ text-align:center;
+ margin:0px;
+ font-size:18px;
+ text-decoration:underline;
+ color:white;
+}
+#main_content
+{
+ margin-top:50px;
+ width:500px;
+ margin-left:250px;
+}
+#main_content li
+{
+ display:inline;
+ list-style-type:none;
+ background-color:#F0F0F0;
+ padding:10px;
+ border-radius:5px 5px 0px 0px;
+ color:#292A0A;
+ font-weight:bold;
+ cursor:pointer;
+}
+#main_content li.notselected
+{
+ background-color:white;
+ color:#292A0A;	
+}
+#main_content li.selected
+{
+ background-color:#D0F5A9;
+ color:#292A0A;	
+}
+#main_content .hidden_desc
+{
+ display:none;
+ visibility:hidden;
+}
+#main_content #page_content
+{
+ background-color:#F0F0F0;
+ padding:10px;
+ margin-top:9px;
+ border-radius:0px 5px 5px 5px;
+ color:#2E2E2E;
+ line-height: 1.6em;
+ word-spacing:4px;
+}
+#Previous{
+    height: 36px;
+    width: 106px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 149px;
+}
+</style>
+<script>
+ function change_tab(id)
+ {
+   document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
+   document.getElementById("page1").className="notselected";
+   document.getElementById("page2").className="notselected";
+   document.getElementById("page3").className="notselected";
+   document.getElementById(id).className="selected";
+ }
+</script>
+</head>
+<body>
+
+<div id="main_content">
+
+ <li class="selected" id="page1" onclick="change_tab(this.id);">College Projects</li>
+ <li class="notselected" id="page2" onclick="change_tab(this.id);">Companies Projects</li>
+ <li class="notselected" id="page3" onclick="change_tab(this.id);">Self Project</li>
+ 
+ <div class='hidden_desc' id="page1_desc">
+  <h2>Final Year Project</h2>
+  Identity-based Remote Data Integrity Checking with Perfect Data Privacy Preserving for Cloud Storage
+  <h2>Mini Projects</h2> 
+  A responsive website for a restaurant which provides details of the restaurant and the services offered by them, using HTML, CSS, Bootstrap, JQuery.
+ </div>
+
+ <div class='hidden_desc' id="page2_desc">
+  <h2>POSMART (Point Of Sale)</h2>
+  This software project is a online solution for traditional supermarket billing system with multiplatform and some other added functionality . 
+  This system is built for fast data processing and bill generation for supermarket customers.
+  The billing database is a vast collection of product name,Customer details, price and other product specific data. 
+  A product when billed is searched from the database and its price is added to the bill based  upon the product quantity and the available discount is applied on the product.
+  Various payment modes are available for the customer and details of the customer are recorded for future reference.
+  The application  has the feature of inventory management to manage the flow of goods.
+  <h2>Meyer</h2>
+  
+ </div>
+ 
+ <div class='hidden_desc' id="page3_desc">
+  <h2>Amazon Web Page</h2>
+
+ </div>
+ 
+ <div id="page_content">
+
+ </div>
+ <div>
+    <div style="margin-left: 148px; margin-top: -105px;">
+        <a href="skills.html"><button id="Previous">&laquo; Previous</button></a>
+        <a href="index.html"><button id="Previous">Home Page &raquo;</button></a>
+    </div>
+   
+</div>
+ 
+</div>
+ 
+</body>
+</html>
